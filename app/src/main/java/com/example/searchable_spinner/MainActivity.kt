@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
 
             listView.setOnItemClickListener { parent, view, position, id ->
                 btnSearchCity.text = adapter.getItem(position)
-                Log.e("main:", "selected item: ${adapter.getItem(position)}, Position: $position")
+                Log.e("main:", "selected item: ${adapter.getItem(position)}, position: $position Id: ${adapter.getItem(position)}")
                 dialog.dismiss()
             }
 
